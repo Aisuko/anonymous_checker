@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: '.'
+          format: gcc
+          severity: error
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make script executable
+        run: chmod +x anonymous_checker.sh
+      - name: Test script syntax
+        run: bash -n anonymous_checker.sh
+      - name: Create test directory
+        run: |
+          mkdir -p test_project
+          echo 'contact = "test@university.edu"' > test_project/test.py
+          echo '# John'\''s code' >> test_project/test.py
+      - name: Run checker on test project
+        run: ./anonymous_checker.sh test_project
