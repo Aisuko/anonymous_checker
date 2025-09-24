@@ -1,0 +1,11 @@
+title: Anonymous Checker
+description: Accelerate research by ensuring anonymous review compliance
+url: "https://your-username.github.io"
+baseurl: "/anonymous_checker"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Checker - Research Anonymity Tool</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem 0; }
+        .hero { text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; }
+        .features { padding: 4rem 0; background: #f8f9fa; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .feature-card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .feature-card h3 { color: #667eea; margin-bottom: 1rem; }
+        .demo { padding: 4rem 0; }
+        .code-block { background: #f6f8fa; border-radius: 8px; padding: 1.5rem; margin: 1rem 0; overflow-x: auto; }
+        .btn { display: inline-block; background: #667eea; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 10px 5px; }
+        .btn:hover { background: #5a6fd8; }
+        footer { background: #333; color: white; text-align: center; padding: 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>🔍 Anonymous Checker</h1>
+                <p>Accelerate research by ensuring anonymous review compliance</p>
+                <a href="https://github.com/your-username/anonymous_checker" class="btn">Get Started</a>
+                <a href="#demo" class="btn">View Demo</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">🚀 Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📧 Email Detection</h3>
+                    <p>Automatically identifies email addresses in code, documentation, and configuration files across your entire project.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🏫 University Domains</h3>
+                    <p>Detects academic institution domains (.edu, .ac.*) that could reveal your affiliation during anonymous review.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👤 GitHub Usernames</h3>
+                    <p>Finds GitHub profile references and usernames that might compromise your anonymity in research submissions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✍️ Author Information</h3>
+                    <p>Locates author, contact, and maintainer references in metadata, comments, and documentation files.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💬 Personal Names</h3>
+                    <p>Identifies personal names in code comments that could reveal the identity of contributors.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📁 Multi-Format Support</h3>
+                    <p>Scans Python, Markdown, text files, and YAML configurations commonly used in research projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2>🔧 Quick Start</h2>
+            <div class="code-block">
+                <pre><code class="language-bash"># Clone and setup
+git clone https://github.com/your-username/anonymous_checker.git
+cd anonymous_checker
+chmod +x anonymous_checker.sh
+
+# Run the checker
+./anonymous_checker.sh /path/to/your/research/project</code></pre>
+            </div>
+
+            <h3>📊 Sample Output</h3>
+            <div class="code-block">
+                <pre><code>=== Scanning for Anonymous Review Policy Violations ===
+
+1. Email addresses:
+./src/main.py:15:    contact = "researcher@university.edu"
+
+2. University domains:
+./README.md:8:    For questions, contact us at lab@stanford.edu
+
+3. GitHub usernames:
+./docs/setup.md:12:    Visit https://github.com/johndoe/project
+
+4. Author/Contact references:
+./setup.py:3:    author: John Smith
+
+5. Personal names in comments:
+./utils.py:25:    # John's implementation of the algorithm</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Anonymous Checker. Licensed under Apache 2.0. Accelerate your research! 🎓</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
