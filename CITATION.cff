@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Anonymous Checker"
+abstract: "A powerful tool to accelerate research by ensuring anonymous review compliance. Automatically scans research projects for potential identifying information."
+authors:
+  - family-names: "Li"
+    given-names: "Bowen"
+  - family-names: "Xu"
+    given-names: "Ziqi"
+repository-code: "https://github.com/Aisuko/anonymous_checker"
+url: "https://aisuko.github.io/anonymous_checker"
+license: Apache-2.0
+keywords:
+  - research
+  - anonymity
+  - academic
+  - review
+  - compliance
+  - scanner
+version: "0.1.0"
+date-released: "2025-09-24"
