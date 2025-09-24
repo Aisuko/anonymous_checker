@@ -21,7 +21,7 @@ A powerful tool to accelerate research by ensuring anonymous review compliance. 
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/anonymous_checker.git
+git clone https://github.com/Aisuko/anonymous_checker.git
 cd anonymous_checker
 
 # Make the script executable
