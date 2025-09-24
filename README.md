@@ -133,6 +133,21 @@ For issues, feature requests, or questions:
 - Check existing issues for solutions
 - Contribute improvements via pull requests
 
+## 📖 Citation
+
+If you use Anonymous Checker in your research, please cite it as:
+
+```latex
+@software{li2025anonymous,
+  title = {Anonymous Checker},
+  author = {Li, Bowen and Xu, Ziqi},
+  year = {2025},
+  version = {0.1.0},
+  url = {https://github.com/Aisuko/anonymous_checker},
+  note = {A powerful tool to accelerate research by ensuring anonymous review compliance}
+}
+```
+
 ---
 
 **Accelerate your research while maintaining anonymity compliance!** 🎓✨
